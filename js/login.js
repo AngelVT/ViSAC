@@ -5,7 +5,11 @@ function onSignIn(googleUser) {
     console.log('Image URL: ' + profile.getImageUrl());
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 
-    window.location.replace("http://www.w3schools.com");
+    // Simulate a mouse click:
+window.location.href = "http://www.w3schools.com";
+
+// Simulate an HTTP redirect:
+window.location.replace("http://www.w3schools.com");
 }
 
 function signOut() {
