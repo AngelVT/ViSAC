@@ -6,10 +6,10 @@ function onSignIn(googleUser) {
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 
     // Simulate a mouse click:
-window.location.href = "http://www.w3schools.com";
+window.location.href = "https://angelvt.github.io/ViSAC/home.html";
 
 // Simulate an HTTP redirect:
-window.location.replace("http://www.w3schools.com");
+window.location.replace("https://angelvt.github.io/ViSAC/home.html");
 }
 
 function signOut() {
