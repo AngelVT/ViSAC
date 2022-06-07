@@ -1,0 +1,17 @@
+/*Amo a mi familia :3*/
+/*Hello World!...*/
+.containerimg {
+  position: relative; /*Contenedor para que no se salga del tamaño y se vea tó' feo x2*/
+  /*Espacio/Posición de acuerdo al orden del documento*/
+  width:50%; /*Espacio para Hover*/
+}
+.imag {
+  opacity:3; /*Color inicial*/
+  display:block; /*Block genera el cuadro de bloqueo con hover*/
+  transition: .5s ease; /*ease para transición con comienzo lento a final fasto*/
+  backface-visibility: hidden;
+}
+.containerimg:hover .imag {
+  opacity: 0.5;
+}
+/*Propiedad de Cokes Industriales S.A. de C.V.*/

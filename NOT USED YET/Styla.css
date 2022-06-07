@@ -1,0 +1,117 @@
+/*Amo a mi familia :3*/
+/*Hello World!...*/
+.Cajatexto{
+	position: relative;
+	display: inline-block; /*Para que no se salga de la imagen y quede tó' feo' */
+}
+.textoarriba{
+	position: absolute;
+	top: 60px;
+	left: 45px;
+	font-family: Arial Black;
+	font-size: 35px;
+	color: white;
+}
+.textoarriba2{
+	position: absolute;
+	top: 100px;
+	left: 45px;
+	font-family: Arial Black;
+	font-size: 35px;
+	color: white;
+}
+/*Creado por Diego Rodríguez Velázquez (Estudiante de la UTVAM)*/
+/*También conocido como Mictian RV o Lokustus Tutoriales*/
+.textoabajo{
+	position: absolute;
+	top: 150px;
+	left: 45px;
+	width: 350px;
+	height: 200px;
+	font-family: Arial;
+	font-size: 15px;
+	color: white;
+}
+.iconoespacio{
+	position: absolute;
+	top: 315px;
+	left: 55px;
+	font-family: Arial;
+	font-size: 45px;
+	color: white;
+}
+.servi1{
+	position: absolute;
+	top: 100px;
+	left: 55px;
+	font-family: Arial;
+	font-size: 45px;
+	color: white;
+}
+.servi2{
+	position: absolute;
+	top: 285px;
+	left: 55px;
+	font-family: Arial;
+	font-size: 45px;
+	color: white;
+}
+.abas{
+	position: absolute;
+	top: 315px;
+	left: 120px;
+	font-family: Arial Black;
+	font-size: 20px;
+	color: white;
+}
+.abastext{
+	position: absolute;
+	top: 345px;
+	left: 120px;
+	width: 280px;
+	height: 200px;
+	font-family: Arial;
+	font-size: 15px;
+	color:#18D6D6;
+}
+.Cajatexto2{
+	position: relative;
+	display: inline-block; /*Todo esto es la caja del lado right*/
+}
+.calid{
+	position: absolute;
+	top: 100px;
+	left: 120px;
+	font-family: Arial Black;
+	font-size: 20px;
+	color: white;
+}
+.calidtext{
+	position: absolute;
+	top: 130px;
+	left: 120px;
+	width: 280px;
+	height: 200px;
+	font-family: Arial;
+	font-size: 15px;
+	color:#18D6D6;
+}
+.serv{
+	position: absolute;
+	top: 285px;
+	left: 120px;
+	font-family: Arial Black;
+	font-size: 20px;
+	color: white;
+}
+.servtext{
+	position: absolute;
+	top: 315px;
+	left: 120px;
+	width: 280px;
+	height: 200px;
+	font-family: Arial;
+	font-size: 15px;
+	color:#18D6D6;
+}
+/*Propiedad de Cokes Industriales S.A. de C.V.*/

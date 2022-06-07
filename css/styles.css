@@ -1,0 +1,497 @@
+/*Valores Generales*/
+:root {
+	--primario: #0FF513;
+	--secundario: #A0F71B;
+	--terciario: #E1D424;
+	--complementario: #F7C11B;
+	--complementario1: #F5A236;
+	--blanco: #fff;
+	--negro: #000;
+
+	--font: 'Rubik', sans-serif;
+}
+
+/*
+Trucos CSS
+
+Tamaño de elementos no afectado por padding
+
+Tamaño de fuente y equivalencia a rems 1rem = 10px
+
+*/
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+	font-size: 16px;
+	font-family: var(--font);
+}
+
+/*Generales*/
+
+h1, h2, h3 { text-align: center; }
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h1 span {
+	font-size: 75%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Globales*/
+.container {
+	position: relative;
+	padding: 1% 10%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.field {
+	outline: none;
+	border: 0.1rem solid transparent;
+	border-radius: 0.5rem;
+	height: 3rem;
+}
+
+.boton {
+	border: 0.1rem solid transparent;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+.boton:hover {
+	transform: scale(1.1);
+}
+
+/*Encabezado*/
+
+.head {
+	color: var(--negro);
+}
+
+.head img { width: 50%; }
+
+/*barra de navegacion*/
+
+.navbar {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: var(--primario);
+	z-index: 3;
+}
+
+.navbar .link {
+	font-size: 2rem;
+	color: var(--blanco);
+	padding: 1.5rem 3rem;
+}
+
+.navbar .link:hover {
+	transform: scale(1.1);
+	background-color: var(--secundario);
+	border-radius: 5rem;
+}
+
+.navbar span {
+	position: absolute;
+	color: var(--blanco);
+	left: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.navbar span:hover {
+	text-decoration: underline;
+}
+
+/*Login section*/
+
+.loginbox {
+	padding: 3rem;
+	background-color: var(--secundario);
+	margin: 1rem auto;
+	border-radius: 1rem;
+	width: 50%;
+}
+
+
+/*Distribucion de formulario */
+.loginbox form {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 10rem 1fr 1fr;
+	grid-template-rows: repeat(5,1fr);
+	row-gap: 1rem;
+	column-gap: 0.5rem;
+}
+
+.field:nth-child(2), .field:nth-child(4) {
+	grid-column: 2 / span 2;
+}
+
+.loginbox a, .loginbox label:nth-child(6) {
+	grid-column: span 3;
+	text-align: center;
+}
+
+.loginbox button {
+	grid-column: 3;
+	grid-row: 5;
+}
+
+.loginbox a, .loginbox label {
+	color: var(--blanco);
+}
+
+.loginbox label {
+	text-align: right;
+}
+
+/*Body content*/
+.content {
+	padding: 2rem 10rem;
+}
+
+.content p {
+	font-size: 2rem;
+}
+
+.content h3 {
+	font-size: 2.5rem;
+}
+
+.vid-container {
+	padding: 0 15rem;
+}
+
+.iframe-container {
+    margin-top: 6rem;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.areas {
+	display: flex;
+	justify-content: space-between;
+}
+
+.area {
+	padding: 1.2rem 2.5rem;
+	color: var(--blanco);
+	font-size: 2.2rem;
+	background-color: var(--secundario);
+	border-radius: 5rem;
+	width: 28%;
+	text-align: center;
+}
+
+.area:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+	box-shadow: 0px 5px 15px 0px rgba(81, 81, 81, 0.678);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(81,81,81,0.678);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(81, 81, 81, 0.678);
+}
+
+/*Footer*/
+.footer {
+	background-color: var(--primario);
+	height: 20rem;
+	display: flex;
+	justify-content: space-around;
+	padding: 5rem;
+}
+
+.footer_sec{
+	width: 45%;
+}
+
+.footer_sec p {
+	color: var(--blanco);
+}
+
+/*Forms*/
+.form-head label, .form-body label, .self-assessment label {
+	font-size: 2rem;
+}
+
+input.formulario {
+	border-color: var(--secundario);
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	background-color: transparent;
+	outline: none;
+}
+
+textarea {
+	max-width: 100%;
+	min-width: 100%;
+	background-color: transparent;
+	border: .2rem solid var(--secundario);
+	outline: none;
+}
+
+.botonB {
+	background-color: transparent;
+	color: var(--secundario);
+	border: .2rem solid var(--secundario);
+	font-weight: 500;
+	width: 25%;
+	margin: 2.5rem;
+	border-radius: 2rem;
+}
+
+.form-head {
+	display: grid;
+	grid-template-columns: 3;
+	grid-template-rows: 5;
+	row-gap: 1rem;
+	column-gap: 1rem;
+}
+
+.form-head label input {
+	width: 100%;
+}
+
+.form-head label:nth-child(2) {
+	grid-column: 2;
+}
+.form-head label:nth-child(3) {
+	grid-column: 3;
+}
+.form-head label:nth-child(4) {
+	grid-column: 1/3;
+}
+
+.form-head label:nth-child(6) {
+	grid-column: 1/4;
+	height: 4rem;
+}
+
+.form-head label:nth-child(7) {
+	grid-column: 1;
+}
+
+.form-head label:nth-child(10) {
+	grid-column: 3;
+	grid-row: 4;
+}
+
+.form-head label:nth-child(9) {
+	grid-column: 1/4;
+}
+
+.form-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 5rem;
+}
+
+.form-body label {
+	width: 100%;
+	margin: 1.2rem;
+}
+
+.form-body textarea {
+	min-height: 15rem;
+	max-height: 20rem;
+}
+
+.form-body label input {
+	width: 98%;
+}
+
+.self-assessment {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.self-assessment label {
+	margin: 1rem;
+	width: 100%;
+	text-align: left;
+}
+
+.self-assessment label.A {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+label.Q {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.label.Answer {
+	width: 100%;
+	margin-left: 10rem;
+}
+
+.results h4 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.results p {
+	margin-left: 5rem;
+}
+
+embed {
+	width: 100%;
+	height: 60rem;
+}
+
+/*By Angel Velázquez García n Diego Rodríguez Velázquez*/
+
+
+/*
+.Uptext{
+	position: absolute;
+	top: 60px;
+	left: 45px;
+	font-family: Arial Black;
+	font-size: 35px;
+	color: white;
+}
+.textoarriba2{
+	position: absolute;
+	top: 100px;
+	left: 45px;
+	font-family: Arial Black;
+	font-size: 35px;
+	color: white;
+}
+.textoabajo{
+	position: absolute;
+	top: 150px;
+	left: 45px;
+	width: 350px;
+	height: 200px;
+	font-family: Arial;
+	font-size: 15px;
+	color: white;
+}
+.iconoespacio{
+	position: absolute;
+	top: 315px;
+	left: 55px;
+	font-family: Arial;
+	font-size: 45px;
+	color: white;
+}
+.servi1{
+	position: absolute;
+	top: 100px;
+	left: 55px;
+	font-family: Arial;
+	font-size: 45px;
+	color: white;
+}
+.servi2{
+	position: absolute;
+	top: 285px;
+	left: 55px;
+	font-family: Arial;
+	font-size: 45px;
+	color: white;
+}
+.abas{
+	position: absolute;
+	top: 315px;
+	left: 120px;
+	font-family: Arial Black;
+	font-size: 20px;
+	color: white;
+}
+.abastext{
+	position: absolute;
+	top: 345px;
+	left: 120px;
+	width: 280px;
+	height: 200px;
+	font-family: Arial;
+	font-size: 15px;
+	color:#18D6D6;
+}
+.Cajatexto2{
+	position: relative;
+	display: inline-block; /*Todo esto es la caja del lado right
+}
+.calid{
+	position: absolute;
+	top: 100px;
+	left: 120px;
+	font-family: Arial Black;
+	font-size: 20px;
+	color: white;
+}
+.calidtext{
+	position: absolute;
+	top: 130px;
+	left: 120px;
+	width: 280px;
+	height: 200px;
+	font-family: Arial;
+	font-size: 15px;
+	color:#18D6D6;
+}
+.serv{
+	position: absolute;
+	top: 285px;
+	left: 120px;
+	font-family: Arial Black;
+	font-size: 20px;
+	color: white;
+}
+.servtext{
+	position: absolute;
+	top: 315px;
+	left: 120px;
+	width: 280px;
+	height: 200px;
+	font-family: Arial;
+	font-size: 15px;
+	color:#18D6D6;
+} */
