@@ -5,10 +5,10 @@ function onSignIn(googleUser) {
     console.log('Image URL: ' + profile.getImageUrl());
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 
-    if(profile.getEmail == "/^\w+([\.-]?\w+)*@utvam.edu.mx"){
+    if(profile.getEmail() == "@utvam.edu.mx"){
         window.location.href("https://angelvt.github.io/ViSAC/home.html");
     }
-    else{
+    else {
         window.location.href("https://angelvt.github.io/ViSAC/main.html");
     }
   }
