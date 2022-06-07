@@ -132,6 +132,8 @@ a {
 /*Login section*/
 
 .loginbox {
+	display: flex;
+	justify-content: center;
 	padding: 3rem;
 	background-color: var(--secundario);
 	margin: 1rem auto;
